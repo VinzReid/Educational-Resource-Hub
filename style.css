@@ -9,6 +9,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+.navbar {
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.navbar .nav-link:hover,
+.nav-link:hover {
+  color: #28a745 !important;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #28a745; /* Change hover background color */
+  color: #fff; /* Change text color on hover if needed */
+}
 .bg-green {
   background-color: #28a745;
   color: white;
@@ -34,4 +55,25 @@
   background-color: #28a745;
   padding: 20px 0;
   text-align: center;
+}
+
+.card {
+  background: rgba(40, 167, 69, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #28a745;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid #28a745;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

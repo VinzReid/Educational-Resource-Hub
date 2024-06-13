@@ -21,7 +21,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">EduHub</a>
+        <a class="navbar-brand logo" href="#">WebDev Hub</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -49,13 +49,19 @@
                 Categories
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Categories</a></li>
+                <li>
+                  <a class="dropdown-item" href="#categories-section"
+                    >Categories</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Resources</a></li>
+                <li>
+                  <a class="dropdown-item" href="#resources">Resources</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#about">About Us</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
               </ul>
             </li>
           </ul>
@@ -78,33 +84,44 @@
     <section id="home" class="py-5">
       <div class="bg-green text-center py-5">
         <div class="container">
-          <h1 class="display-4">Welcome to the Web Development Educational Resources Hub</h1>
+          <h1 class="display-4">
+            Welcome to the Web Development Educational Resources Hub
+          </h1>
           <p class="lead">
             Your One-Stop Destination for All Things Web Development.
           </p>
         </div>
       </div>
 
-      <!-- Introduction Section inside Home -->
       <section id="introduction" class="py-5">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8">
               <h2 class="text-center text-green">Introduction</h2>
-              <p class="lead text-center">
-                Welcome to the Web Development Educational Resources Hub, your premier destination for mastering web development from beginner basics to advanced techniques. Dive into curated tutorials, expert insights, and practical guides tailored to empower your journey in the ever-evolving world of web development.
+              <p class="text-center">
+                Welcome to the Web Development Educational Resources Hub, your
+                premier destination for mastering web development from beginner
+                basics to advanced techniques. Dive into curated tutorials,
+                expert insights, and practical guides tailored to empower your
+                journey in the ever-evolving world of web development.
               </p>
+              <div class="text-center">
+                <img
+                  src="https://postimage.me/images/2024/06/13/intro.gif"
+                  alt="Image Placeholder"
+                  class="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Featured Section inside Home -->
+
       <section id="featured" class="py-5 bg-light">
         <div class="container">
           <h2 class="text-center text-green mb-4">Featured Resources</h2>
 
           <div class="row row-cols-1 row-cols-md-2 g-4">
-            <!-- Resource 1 -->
             <div class="col">
               <div class="card border-0 shadow-sm h-100">
                 <img
@@ -113,10 +130,17 @@
                   alt="Resource 1"
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-green mb-3">Cybersecurity Essentials for Web Professionals</h5>
+                  <h5 class="card-title text-green mb-3">
+                    Cybersecurity Essentials for Web Professionals
+                  </h5>
+                  <h6><strong>Category: Web Security</strong></h6>
                   <p class="card-text">
-                    <h6><b>Category: Web Security</b></h6>
-                    focuses on foundational principles and practical strategies tailored for web developers and IT professionals. It covers key topics including secure coding, authentication, encryption, and defense against common web threats like SQL injection and XSS, equipping participants to protect web applications and infrastructure effectively.
+                    focuses on foundational principles and practical strategies
+                    tailored for web developers and IT professionals. It covers
+                    key topics including secure coding, authentication,
+                    encryption, and defense against common web threats like SQL
+                    injection and XSS, equipping participants to protect web
+                    applications and infrastructure effectively.
                   </p>
                   <button class="btn btn-outline-success" type="button">
                     Explore
@@ -125,7 +149,6 @@
               </div>
             </div>
 
-            <!-- Resource 2 -->
             <div class="col">
               <div class="card border-0 shadow-sm h-100">
                 <img
@@ -134,10 +157,20 @@
                   alt="Resource 2"
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-green mb-3">Optimization Strategies</h5>
+                  <h5 class="card-title text-green mb-3">
+                    Optimization Strategies
+                  </h5>
+                  <h6>
+                    <strong>Category: Web Performance Optimization</strong>
+                  </h6>
+
                   <p class="card-text">
-                    <h6><b>Category: Web Performance Optimization</b></h6>
-                    Optimization strategies in web performance involve techniques like minimizing HTTP requests, optimizing caching, and reducing file sizes for images, scripts, and stylesheets. These methods aim to improve site speed and efficiency, ensuring faster loading times and better user experience overall.
+                    Optimization strategies in web performance involve
+                    techniques like minimizing HTTP requests, optimizing
+                    caching, and reducing file sizes for images, scripts, and
+                    stylesheets. These methods aim to improve site speed and
+                    efficiency, ensuring faster loading times and better user
+                    experience overall.
                   </p>
                   <button class="btn btn-outline-success" type="button">
                     Discover
@@ -155,9 +188,7 @@
       <div class="container">
         <h2 class="text-center text-green mb-4">Categories</h2>
 
-        <!-- Category Listings -->
         <div class="row row-cols-1 row-cols-md-2 g-4">
-          <!-- Category: Full-Stack Development -->
           <div class="col">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body">
@@ -176,7 +207,6 @@
             </div>
           </div>
 
-          <!-- Category: Web Security -->
           <div class="col">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body">
@@ -193,7 +223,6 @@
             </div>
           </div>
 
-          <!-- Category: Content Management Systems (CMS) -->
           <div class="col">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body">
@@ -211,7 +240,6 @@
             </div>
           </div>
 
-          <!-- Category: Web Performance Optimization -->
           <div class="col">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body">
@@ -230,15 +258,13 @@
           </div>
         </div>
 
-        <!-- Sample Resources -->
         <section id="resources" class="py-5">
           <div class="container">
             <h2 class="text-center text-green my-4">Resources</h2>
 
             <div class="row row-cols-1 row-cols-md-3 g-4">
-              <!-- Resource 1: LAMP Web Development -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card border-1 shadow-sm h-100">
                   <img
                     src="./images/lamp.png"
                     class="card-img-top"
@@ -248,10 +274,10 @@
                     <h5 class="card-title text-green mb-3">
                       LAMP Web Development
                     </h5>
+                    <h6><strong>Category: Full-Stack Development</strong></h6>
                     <p class="card-text">
-                      <h6><b>Category: Full-Stack Development</b></h6> This resource aims to
-                      guide beginners to create their own website using the LAMP
-                      stack.
+                      This resource aims to guide beginners to create their own
+                      website using the LAMP stack.
                     </p>
                     <button class="btn btn-outline-success" type="button">
                       Learn More
@@ -260,9 +286,8 @@
                 </div>
               </div>
 
-              <!-- Resource 2: MEAN Web Development -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card border-1 shadow-sm h-100">
                   <img
                     src="./images/mean.jpg"
                     class="card-img-top"
@@ -272,8 +297,8 @@
                     <h5 class="card-title text-green mb-3">
                       MEAN Web Development
                     </h5>
+                    <h6><strong>Category: Full-Stack Development</strong></h6>
                     <p class="card-text">
-                      <h6><b>Category: Full-Stack Development</b></h6>
                       This resource aims to guide beginners to create their own
                       website using the MEAN stack.
                     </p>
@@ -284,9 +309,8 @@
                 </div>
               </div>
 
-              <!-- Resource 3: MERN Web Development -->
               <div class="col">
-                <div class="card border-0 shadow-sm h-100">
+                <div class="card border-1 shadow-sm h-100">
                   <img
                     src="./images/mern.jpg"
                     class="card-img-top"
@@ -296,8 +320,8 @@
                     <h5 class="card-title text-green mb-3">
                       MERN Web Development
                     </h5>
+                    <h6><strong>Category: Full-Stack Development</strong></h6>
                     <p class="card-text">
-                      <h6><b>Category: Full-Stack Development</b></h6>
                       This resource aims to guide beginners to create their own
                       website using the MERN stack.
                     </p>
@@ -317,20 +341,20 @@
     <div class="container">
       <section id="about" class="mt-5">
         <div id="mission" class="mb-5">
-          <h2 class="text-center mb-4">Our Mission</h2>
+          <h2 class="text-center mb-4 text-green">Our Mission</h2>
           <p class="lead text-center">
-            At Web Development Educational Resources Hub, we are committed to providing a
-            transformative educational experience. Our mission is to empower
-            individuals through innovative learning opportunities, fostering
-            intellectual curiosity, and preparing them to thrive in a rapidly
-            changing world.
+            At Web Development Educational Resources Hub, we are committed to
+            providing a transformative educational experience. Our mission is to
+            empower individuals through innovative learning opportunities,
+            fostering intellectual curiosity, and preparing them to thrive in a
+            rapidly changing world.
           </p>
         </div>
 
         <div id="contact" class="mb-5">
           <div class="row">
             <div class="col-md-6">
-              <h2 class="text-center mb-4">Contact Information</h2>
+              <h2 class="text-center mb-4 text-green">Contact Information</h2>
               <h4>Address:</h4>
               <p>123 Educational Hub Street,<br />Cityville, State, ZIP</p>
               <h4>Phone:</h4>
@@ -339,7 +363,7 @@
               <p>info@youreducationhub.com</p>
             </div>
             <div class="col-md-6">
-              <h2 class="text-center mb-4">Send us a Message</h2>
+              <h2 class="text-center mb-4 text-green">Send us a Message</h2>
               <form>
                 <div class="mb-3">
                   <label for="name" class="form-label">Your Name</label>
